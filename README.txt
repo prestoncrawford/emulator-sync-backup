@@ -8,19 +8,19 @@ Generate a private key on your local computer if you haven't already done so.
 
 For example:
 
-```zsh
+```bash
 ssh-keygen -t rsa -C "<your email address>"
 ```
 
 Use `ssh-copy-id` to install key on your handheld device
 
-```zsh
+```bash
 ssh-copy-id root@<ip address of your device>
 ```
 
 Make the script executable
 
-```zsh
+```bash
 chmod u+x synchronizeSaves.sh
 ```
 
@@ -28,6 +28,6 @@ Modify synchronizeSaves.sh, adding your device names, and then the associated UR
 
 Run synchronizeSaves.sh passing flags to the script for the starting device, the destination device and the console to synchronizeSaves
 
-```zsh
+```bash
 synchronizeSaves.sh -s 351v -d 351p -c nes
 ```
